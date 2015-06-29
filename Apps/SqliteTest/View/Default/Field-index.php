@@ -149,7 +149,7 @@
       </div>
       <div class="form-group">
         <label class="col-sm-2 control-label">字段类型</label>
-        <div class="col-sm-10">
+        <div class="col-sm-4">
           <select ng-model="item.type" ng-options="v.type as (v.name + '(' + v.type + ')') for v in data.field_types_arr" class="form-control">
             <option value="">-- 请选择 --</option>
           </select>
@@ -223,34 +223,26 @@
           </div>
         </div>
       </div>
-      <div class="fields-select" ng-show="item.type == 'select'">
+      <div class="fields-select" ng-show="item.type == 'select' || item.type == 'radio' || item.type == 'checkbox'">
         <div class="form-group">
           <label class="col-sm-2 control-label">字段内容</label>
-          <div class="col-sm-10">
-            <textarea name="attrs[choices]" ng-model="item.attrs.choices" class="form-control"></textarea>
-            <span class="help-block">
-              只在项目为可选时有效，每行一个字段，等号前面为字段索引(建议用数字)，后面为内容，例如: <br>
-              <i>1 = 光电鼠标<br>2 = 机械鼠标<br>3 = 没有鼠标</i><br>
-              <i>1.1 = 黑色光电鼠标</i><br><i>1.2 = 红色光电鼠标</i><br>
-              <i>1.2.1 = 蓝牙红色光电鼠标</i><br>
-              注意: <br>
-              1、 "1.2.1 = 蓝牙红色光电鼠标"必须有"1.2 = 红色光电鼠标"和"1 = 光电鼠标"这两项<br>
-              2、 "1.2.1"之间不能有空格<br>
-              3、 字段确定后请勿修改索引和内容的对应关系，但仍可以新增字段。如需调换显示顺序，可以通过移动整行的上下位置来实现
-            </span>
+          <div class="col-sm-4">
+            <textarea name="attrs[choices]" ng-model="item.attrs.choices" class="form-control" style="min-width:100%;min-height:150px;"></textarea>
           </div>
-        </div>
-      </div>
-      <div class="fields-radio" ng-show="item.type == 'radio' || item.type == 'checkbox'">
-        <div class="form-group">
-          <label class="col-sm-2 control-label">字段内容</label>
-          <div class="col-sm-10">
-            <textarea name="attrs[choices]" ng-model="item.attrs.choices" class="form-control"></textarea>
-            <span class="help-block">
-              只在项目为可选时有效，每行一个字段，等号前面为字段索引(建议用数字)，后面为内容，例如: <br>
-              <i>1 = 光电鼠标<br>2 = 机械鼠标<br>3 = 没有鼠标</i><br>
-              注意: 字段确定后请勿修改索引和内容的对应关系，但仍可以新增字段。如需调换显示顺序，可以通过移动整行的上下位置来实现
-            </span>
+          <div class="col-sm-6 help-block" ng-show="item.type == 'select'">
+            只在项目为可选时有效，每行一个字段，等号前面为字段索引(建议用数字)，后面为内容，例如: <br>
+            <i>1 = 光电鼠标<br>2 = 机械鼠标<br>3 = 没有鼠标</i><br>
+            <i>1.1 = 黑色光电鼠标</i><br><i>1.2 = 红色光电鼠标</i><br>
+            <i>1.2.1 = 蓝牙红色光电鼠标</i><br>
+            注意: <br>
+            1、 "1.2.1 = 蓝牙红色光电鼠标"必须有"1.2 = 红色光电鼠标"和"1 = 光电鼠标"这两项<br>
+            2、 "1.2.1"之间不能有空格<br>
+            3、 字段确定后请勿修改索引和内容的对应关系，但仍可以新增字段。如需调换显示顺序，可以通过移动整行的上下位置来实现
+          </div>
+          <div class="col-sm-6 help-block" ng-show="item.type == 'radio' || item.type == 'checkbox'">
+            只在项目为可选时有效，每行一个字段，等号前面为字段索引(建议用数字)，后面为内容，例如: <br>
+            <i>1 = 光电鼠标<br>2 = 机械鼠标<br>3 = 没有鼠标</i><br>
+            注意: 字段确定后请勿修改索引和内容的对应关系，但仍可以新增字段。如需调换显示顺序，可以通过移动整行的上下位置来实现
           </div>
         </div>
       </div>
