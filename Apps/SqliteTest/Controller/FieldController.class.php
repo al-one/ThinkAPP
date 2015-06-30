@@ -32,12 +32,7 @@ class FieldController extends CommonController
       $arr = $this->attr2array_all($arr);
       $dat['list'] = $arr;
       $dat['item'] = $arr[0];
-      $choices = $mod->get_choices_data($dat['item']['attrs']['choices']);
-      if($choices)
-      {
-        $dat['item']['attrs']['choices_data'] = $choices['data'];
-        $dat['item']['attrs']['choices_tree'] = $choices['tree'];
-      }
+      $dat['item']['choices'] = $mod->get_choices_data($dat['item']['attrs']['choices']);
     }
     $this->data = $dat;
     $this->display();
@@ -107,6 +102,7 @@ class FieldController extends CommonController
           if($sort !== false) $dat['sort'] = $sort;
           $dat = $this->attr2array_arr($dat);
           $dat = array('item' => $dat);
+          $dat['item']['choices'] = $mod->get_choices_data($dat['item']['attrs']['choices']);
           $this->data = $dat;
           $this->ret['msg'] = '操作成功';
         }

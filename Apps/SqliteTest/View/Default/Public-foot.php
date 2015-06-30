@@ -79,6 +79,25 @@ function()
     };
   })
 
+  .directive('strInt',function()
+  {
+    return {
+      require: 'ngModel',
+      link: function(scope,element,attrs,ngModel)
+      {
+        ngModel.$parsers.push(function(val)
+        {
+          return val == null ? '' : (val + '');
+        });
+        ngModel.$formatters.push(function(val)
+        {
+          var num = parseInt(val);
+          return !isNaN(num) ? num : '';
+        });
+      }
+    };
+  })
+
   .controller('listCtrl',function($scope,$http,$modal,$log)
   {
     $scope.data = {};
@@ -174,6 +193,7 @@ function()
           alert(ret.msg);
         }
         else if(ret.msg) alert(ret.msg);
+        console.log($scope);
       });
     };
     $scope.cancel = function()

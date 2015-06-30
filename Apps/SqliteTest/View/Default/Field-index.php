@@ -171,7 +171,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">显示长度 Size</label>
           <div class="col-sm-10">
-            <input type="text" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
         <div class="form-group">
@@ -199,19 +199,19 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">数值最大值</label>
           <div class="col-sm-10">
-            <input type="number" name="attrs[max]" value="" ng-model="item.attrs.max" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[max]" value="" ng-model="item.attrs.max" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">数值最小值</label>
           <div class="col-sm-10">
-            <input type="number" name="attrs[min]" value="" ng-model="item.attrs.min" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[min]" value="" ng-model="item.attrs.min" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">步长</label>
           <div class="col-sm-10">
-            <input type="number" name="attrs[step]" value="" ng-model="item.attrs.step" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[step]" value="" ng-model="item.attrs.step" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">行数/高度</label>
           <div class="col-sm-10">
-            <input type="number" name="attrs[rows]" value="" ng-model="item.attrs.rows" min="0" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[rows]" value="" ng-model="item.attrs.rows" min="0" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
       </div>
@@ -250,14 +250,14 @@
         <label class="col-sm-2 control-label"></label>
         <div class="col-sm-10">
           <ul>
-            <li ng-repeat="(k,v) in item.attrs.choices_tree">
-              {{k + ' = ' + item.attrs.choices_data[k]}}
+            <li ng-repeat="(k,v) in item.choices.tree">
+              {{k + ' = ' + item.choices.data[k]}}
               <ul>
                 <li ng-repeat="(k2,v2) in v">
-                  {{k2 + ' = ' + item.attrs.choices_data[k2]}}
+                  {{k2 + ' = ' + item.choices.data[k2]}}
                   <ul>
                     <li ng-repeat="(k3,v3) in v2">
-                      {{k3 + ' = ' + item.attrs.choices_data[k3]}}
+                      {{k3 + ' = ' + item.choices.data[k3]}}
                     </li>
                   </ul>
                 </li>
