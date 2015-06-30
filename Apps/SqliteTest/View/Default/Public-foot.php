@@ -98,12 +98,49 @@ function()
     };
   })
 
+  .factory('commServ',function($http,$modal,$log)
+  {
+    return {
+    };
+  })
+
+  .controller('bodyCtrl',function($rootScope,$scope,$http,$modal,$log)
+  {
+    $rootScope.comm = $rootScope.comm || {};
+    $rootScope.modalSelectClass = function(size)
+    {
+      var items = ['item1','item2','item3'];
+      var modalI = $modal.open(
+      {
+        animation:true,
+        templateUrl:'modal-select.html',
+        controller:'ModalSelectCtrl',
+        size:size,
+        resolve:
+        {
+          items : function(){ return items; }
+        }
+      });
+      modalI.result.then(
+      function(selectedItem)
+      {
+        $scope.selected = selectedItem;
+        console.log($scope);
+      },
+      function()
+      {
+        console.log('Modal dismissed at: ' + new Date());
+      });
+    }
+  })
+
   .controller('listCtrl',function($scope,$http,$modal,$log)
   {
     $scope.data = {};
     $scope.data.list = [];
     $scope.query = function(url)
     {
+      $scope.ajax = url;
       $scope.list = [];
       $http({method:'GET',url:url,params:{ajax:1}})
       .success(function(ret)
@@ -130,20 +167,20 @@ function()
         $scope.data.type = 'ajax';
         $scope.data.url  = url;
       }
-      var modalInstance = $modal.open(
+      var modalForm = $modal.open(
       {
         templateUrl:'modal-form.html',
         controller:'ModalFormCtrl',
+        scope:$scope,
         size:'lg',
         resolve:
         {
           data : function(){ return $scope.data; }
         }
       });
-      modalInstance.result.then(function(selectedItem)
+      modalForm.result.then(function()
       {
-        $scope.selected = selectedItem;
-        console.log(selectedItem);
+        $scope.query($scope.ajax);
       },
       function()
       {
@@ -152,9 +189,9 @@ function()
     };
   })
 
-  .controller('ModalFormCtrl',function($scope,$http,$modalInstance,data)
+  .controller('ModalFormCtrl',function($scope,$http,$modalInstance,commServ,data)
   {
-    console.log(data);
+    $scope.comm = commServ;
     $scope.data = data;
     $scope.list = data.list || [];
     $scope.item = data.item || $scope.list[0] || {};
@@ -191,6 +228,7 @@ function()
           $scope.list = data.list || [];
           $scope.item = data.item || $scope.list[0] || {};
           alert(ret.msg);
+          $modalInstance.close();
         }
         else if(ret.msg) alert(ret.msg);
         console.log($scope);
@@ -200,6 +238,24 @@ function()
     {
       $modalInstance.dismiss('cancel');
     };
+    console.log($scope);
+  })
+
+  .controller('ModalSelectCtrl',function($scope,$modalInstance,items)
+  {
+    $scope.items = items;
+    $scope.selected = {
+      item: $scope.items[0]
+    };
+    $scope.ok = function ()
+    {
+      $modalInstance.close($scope.selected.item);
+    };
+    $scope.cancel = function()
+    {
+      $modalInstance.dismiss('cancel');
+    };
+    console.log($scope);
   });
 
   // - Angular Start
