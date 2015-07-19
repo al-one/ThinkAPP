@@ -2,8 +2,7 @@
 return array(
   //'配置项' => '配置值'
   'DEFAULT_MODULE' => 'App',
-  'SHOW_PAGE_TRACE' => true,
-  
+
   //Tpl
   'TMPL_TEMPLATE_SUFFIX' => '.php',
   //'TMPL_DENY_PHP'        => false,

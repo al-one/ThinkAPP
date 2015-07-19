@@ -1,6 +1,10 @@
 <include file="Public:top"/>
 </head>
+<<<<<<< HEAD
 <body>
+=======
+<body ng-controller="bodyCtrl">
+>>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
 <div id="doc">
 <include file="Public:head"/>
 
@@ -171,7 +175,11 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">显示长度 Size</label>
           <div class="col-sm-10">
+<<<<<<< HEAD
             <input type="text" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control">
+=======
+            <input type="number" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control" str-int>
+>>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
           </div>
         </div>
         <div class="form-group">
@@ -199,19 +207,19 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">数值最大值</label>
           <div class="col-sm-10">
-            <input type="text" name="attrs[max]" value="" ng-model="item.attrs.max" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[max]" value="" ng-model="item.attrs.max" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">数值最小值</label>
           <div class="col-sm-10">
-            <input type="text" name="attrs[min]" value="" ng-model="item.attrs.min" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[min]" value="" ng-model="item.attrs.min" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">步长</label>
           <div class="col-sm-10">
-            <input type="text" name="attrs[step]" value="" ng-model="item.attrs.step" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[step]" value="" ng-model="item.attrs.step" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
       </div>
@@ -219,7 +227,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">行数/高度</label>
           <div class="col-sm-10">
-            <input type="number" name="attrs[rows]" value="" ng-model="item.attrs.rows" min="0" placeholder="选填" class="form-control">
+            <input type="number" name="attrs[rows]" value="" ng-model="item.attrs.rows" min="0" placeholder="选填" class="form-control" str-int>
           </div>
         </div>
       </div>
@@ -232,7 +240,7 @@
           <div class="col-sm-6 help-block" ng-show="item.type == 'select'">
             只在项目为可选时有效，每行一个字段，等号前面为字段索引(建议用数字)，后面为内容，例如: <br>
             <i>1 = 光电鼠标<br>2 = 机械鼠标<br>3 = 没有鼠标</i><br>
-            <i>1.1 = 黑色光电鼠标</i><br><i>1.2 = 红色光电鼠标</i><br>
+            <i>1.1 = 黑色光电鼠标<br>1.2 = 红色光电鼠标</i><br>
             <i>1.2.1 = 蓝牙红色光电鼠标</i><br>
             注意: <br>
             1、 "1.2.1 = 蓝牙红色光电鼠标"必须有"1.2 = 红色光电鼠标"和"1 = 光电鼠标"这两项<br>
@@ -250,14 +258,14 @@
         <label class="col-sm-2 control-label"></label>
         <div class="col-sm-10">
           <ul>
-            <li ng-repeat="(k,v) in item.attrs.choices_tree">
-              {{k + ' = ' + item.attrs.choices_data[k]}}
+            <li ng-repeat="(k,v) in item.choices.tree">
+              {{k + ' = ' + item.choices.data[k]}}
               <ul>
                 <li ng-repeat="(k2,v2) in v">
-                  {{k2 + ' = ' + item.attrs.choices_data[k2]}}
+                  {{k2 + ' = ' + item.choices.data[k2]}}
                   <ul>
                     <li ng-repeat="(k3,v3) in v2">
-                      {{k3 + ' = ' + item.attrs.choices_data[k3]}}
+                      {{k3 + ' = ' + item.choices.data[k3]}}
                     </li>
                   </ul>
                 </li>
@@ -275,8 +283,27 @@
     </form>
   </div>
   <div class="modal-footer">
+    <button class="btn btn-default" ng-click="modalSelectClass()">打开{{ selected }}</button>
     <button class="btn btn-primary" ng-click="submit('<{:url_query('save')}>')">保存</button>
     <button class="btn btn-warning" ng-click="cancel()">取消</button>
+  </div>
+</script>
+
+<script type="text/ng-template" id="modal-select.html">
+  <div class="modal-header">
+    <h3 class="modal-title">I am a modal!</h3>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <li ng-repeat="item in items">
+        <a ng-click="selected.item = item">{{ item }}</a>
+      </li>
+    </ul>
+    Selected: <b>{{ selected.item }}</b>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
   </div>
 </script>
 
