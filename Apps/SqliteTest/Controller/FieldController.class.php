@@ -102,10 +102,7 @@ class FieldController extends CommonController
           if($sort !== false) $dat['sort'] = $sort;
           $dat = $this->attr2array_arr($dat);
           $dat = array('item' => $dat);
-<<<<<<< HEAD
-=======
           $dat['item']['choices'] = $mod->get_choices_data($dat['item']['attrs']['choices']);
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
           $this->data = $dat;
           $this->ret['msg'] = '操作成功';
         }

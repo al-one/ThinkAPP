@@ -83,18 +83,6 @@ function()
   {
     return {
       require: 'ngModel',
-<<<<<<< HEAD
-      link: function(scope, element, attrs, ngModel)
-      {
-        ngModel.$parsers.push(function(value)
-        {
-          return '' + value;
-        });
-        ngModel.$formatters.push(function(value)
-        {
-          var num = parseInt(value);
-          return isNaN(num) ? '' : num;
-=======
       link: function(scope,element,attrs,ngModel)
       {
         ngModel.$parsers.push(function(val)
@@ -105,14 +93,11 @@ function()
         {
           var num = parseInt(val);
           return !isNaN(num) ? num : '';
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
         });
       }
     };
   })
 
-<<<<<<< HEAD
-=======
   .factory('commServ',function($http,$modal,$log)
   {
     return {
@@ -149,17 +134,13 @@ function()
     }
   })
 
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
   .controller('listCtrl',function($scope,$http,$modal,$log)
   {
     $scope.data = {};
     $scope.data.list = [];
     $scope.query = function(url)
     {
-<<<<<<< HEAD
-=======
       $scope.ajax = url;
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
       $scope.list = [];
       $http({method:'GET',url:url,params:{ajax:1}})
       .success(function(ret)
@@ -186,34 +167,20 @@ function()
         $scope.data.type = 'ajax';
         $scope.data.url  = url;
       }
-<<<<<<< HEAD
-      var modalInstance = $modal.open(
-      {
-        templateUrl:'modal-form.html',
-        controller:'ModalFormCtrl',
-=======
       var modalForm = $modal.open(
       {
         templateUrl:'modal-form.html',
         controller:'ModalFormCtrl',
         scope:$scope,
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
         size:'lg',
         resolve:
         {
           data : function(){ return $scope.data; }
         }
       });
-<<<<<<< HEAD
-      modalInstance.result.then(function(selectedItem)
-      {
-        $scope.selected = selectedItem;
-        console.log(selectedItem);
-=======
       modalForm.result.then(function()
       {
         $scope.query($scope.ajax);
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
       },
       function()
       {
@@ -222,15 +189,9 @@ function()
     };
   })
 
-<<<<<<< HEAD
-  .controller('ModalFormCtrl',function($scope,$http,$modalInstance,data)
-  {
-    console.log(data);
-=======
   .controller('ModalFormCtrl',function($scope,$http,$modalInstance,commServ,data)
   {
     $scope.comm = commServ;
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
     $scope.data = data;
     $scope.list = data.list || [];
     $scope.item = data.item || $scope.list[0] || {};
@@ -267,23 +228,16 @@ function()
           $scope.list = data.list || [];
           $scope.item = data.item || $scope.list[0] || {};
           alert(ret.msg);
-<<<<<<< HEAD
-        }
-        else if(ret.msg) alert(ret.msg);
-=======
           $modalInstance.close();
         }
         else if(ret.msg) alert(ret.msg);
         console.log($scope);
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
       });
     };
     $scope.cancel = function()
     {
       $modalInstance.dismiss('cancel');
     };
-<<<<<<< HEAD
-=======
     console.log($scope);
   })
 
@@ -302,7 +256,6 @@ function()
       $modalInstance.dismiss('cancel');
     };
     console.log($scope);
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
   });
 
   // - Angular Start

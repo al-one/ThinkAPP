@@ -1,10 +1,6 @@
 <include file="Public:top"/>
 </head>
-<<<<<<< HEAD
-<body>
-=======
 <body ng-controller="bodyCtrl">
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
 <div id="doc">
 <include file="Public:head"/>
 
