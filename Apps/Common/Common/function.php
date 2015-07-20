@@ -15,6 +15,12 @@ function url_query($url = '',$vars = '',$suffix = '',$domain = false)
   return $tmp;
 }
 
+// 获取输入参数 默认$_REQUEST
+function req($name,$default = '',$filter = null,$datas = null)
+{
+  if(!strpos($name,'.')) $name = 'request.'.$name;
+  return I($name,$default,$filter,$datas);
+}
 
 // 字符串加密
 function aes_encode_str($str,$key = false)

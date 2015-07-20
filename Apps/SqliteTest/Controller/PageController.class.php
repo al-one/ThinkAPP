@@ -1,7 +1,7 @@
 <?php
 namespace SqliteTest\Controller;
 
-class FieldController extends CommonController
+class PageController extends CommonController
 {
 
   public function index()
@@ -15,13 +15,6 @@ class FieldController extends CommonController
     $map = array();
     if($id >= 1) $map['id'] = $id;
     $mod = D(CONTROLLER_NAME);
-    $dat['field_types'] = $mod->field_types;
-    $dat['field_types_arr'] = array();
-    if(is_array($dat['field_types'])) foreach($dat['field_types'] as $k => $v)
-    {
-      $v['type'] = $k;
-      $dat['field_types_arr'][] = $v;
-    }
     $arr = $mod->where($map)->select();
     if(!$arr)
     {
@@ -32,16 +25,7 @@ class FieldController extends CommonController
       $arr = $this->attr2array_all($arr);
       $dat['list'] = $arr;
       $dat['item'] = $arr[0];
-      $dat['item']['choices'] = $mod->get_choices_data($dat['item']['attrs']['choices']);
     }
-    $this->data = $dat;
-    $this->display();
-  }
-
-  public function types()
-  {
-    $mod = D(CONTROLLER_NAME);
-    $dat['field_types'] = $mod->field_types;
     $this->data = $dat;
     $this->display();
   }
@@ -64,8 +48,8 @@ class FieldController extends CommonController
       // add
       if($isadd)
       {
-        var_dump($dat);die($this->ret['msg']);
-        //$id = (int)$mod->add($dat);
+        //var_dump($dat);die("\n".$this->ret['msg']);
+        $id = (int)$mod->add($dat);
       }
       // edit
       else
@@ -101,14 +85,56 @@ class FieldController extends CommonController
           $sort = $mod->auto_sort_set($id);//自动排序
           if($sort !== false) $dat['sort'] = $sort;
           $dat = $this->attr2array_arr($dat);
+          $dat['parent_tree'] = $this->save_tree($id,$dat['parent_id']);
           $dat = array('item' => $dat);
-          $dat['item']['choices'] = $mod->get_choices_data($dat['item']['attrs']['choices']);
           $this->data = $dat;
           $this->ret['msg'] = '操作成功';
         }
       }
     }
     $this->display();
+  }
+
+  protected function save_tree($id,$pid)
+  {
+    $dat = array();
+    $arr = $this->tree($pid);
+    if($id >= 1 && is_array($arr) && $arr)
+    {
+      $mod = D('PageRel');
+      $mod->where(array('page_id' => $id))->delete();
+      foreach($arr as $vid)
+      {
+        $vid = (int)$vid;
+        if($vid >= 1) $dat[] = array('page_id' => $id,'parent_id' => $vid);
+      }
+      if($dat)
+      {
+        $mod->addAll($dat);
+      }
+    }
+    return $dat;
+  }
+
+  protected function tree($pid,$arr = array())
+  {
+    $pid = (int)$pid;
+    if($pid > 0)
+    {
+      $row = D(CONTROLLER_NAME)->field('id,parent_id')->where(array('id' => $pid))->find();
+      if($row)
+      {
+        $arr[] = $row['id'];
+        return $this->tree($row['parent_id'],$arr);
+      }
+      else return $arr;
+    }
+    else return $arr;
+  }
+
+  public function tree_test()
+  {
+    print_r($this->tree(req('id/d')));die("\n");
   }
 
 }

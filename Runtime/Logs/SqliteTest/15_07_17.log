@@ -1,0 +1,568 @@
+[ 2015-07-17T12:59:28+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\FieldController.class.php 第 14 行.
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0020s ]
+SQL: SELECT * FROM an_field  [ RunTime:0.0010s ]
+
+[ 2015-07-17T12:59:33+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:00:06+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:03:23+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Model/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\ModelController.class.php 第 14 行.
+SQL: PRAGMA table_info( an_model ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_model  [ RunTime:0.0030s ]
+
+[ 2015-07-17T13:03:28+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Model/query/id/2?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_model ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_model WHERE id = 2  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:03:33+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Model/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_model ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_model WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:03:40+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\FieldController.class.php 第 14 行.
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_field  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:03:43+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:36:10+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_field  [ RunTime:0.0010s ]
+
+[ 2015-07-17T13:36:13+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:36:21+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T13:36:26+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Field/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_field ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_field WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:11:51+08:00 ] 127.0.0.1 /ThinkAPP/?m=SqliteTest&c=Page
+ERR: 模板不存在:./Apps/SqliteTest/View/Default/Page-index.php
+
+[ 2015-07-17T15:11:57+08:00 ] 127.0.0.1 /ThinkAPP/?m=SqliteTest&c=Page&ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-17T15:13:17+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: dat D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 29 行.
+
+[ 2015-07-17T15:19:45+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: dat D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 29 行.
+
+[ 2015-07-17T15:21:00+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE key = 'index' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:21:40+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE key = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page (name,key,status,sort,attrs) VALUES ('网站首页','index','1','0','') [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='10' WHERE id = 1 [ RunTime:0.0130s ]
+
+[ 2015-07-17T15:21:42+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:25:48+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:26:36+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:26:49+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:30:12+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:30:16+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM an_page WHERE key = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='1',status='1',sort='10',key='index',name='网站首页',parent_id='0',model_id='0',attrs='',remark='',utime='1437118216',atime='0' WHERE id = 1 [ RunTime:0.0170s ]
+
+[ 2015-07-17T15:30:18+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:31:45+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:32:14+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:33:31+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:42:55+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:46:25+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:46:26+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:48:19+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM an_page WHERE key = 'about' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='1',status='1',sort='10',key='about',name='关于我们',parent_id='0',model_id='0',attrs='',remark='',utime='1437119299',atime='0' WHERE id = 1 [ RunTime:0.0130s ]
+
+[ 2015-07-17T15:48:20+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:48:38+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:48:53+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM an_page WHERE key = 'index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='1',status='1',sort='10',key='index',name='网站首页',parent_id='0',model_id='0',attrs='',remark='',utime='1437119333',atime='0' WHERE id = 1 [ RunTime:0.0180s ]
+
+[ 2015-07-17T15:48:54+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:50:48+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0010s ]
+
+[ 2015-07-17T15:50:50+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/1?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 1  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:51:13+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE key = 'about' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page (name,key,status,sort,attrs,utime,atime) VALUES ('关于我们','about','1','0','','1437119473','1437119473') [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='20' WHERE id = 2 [ RunTime:0.0190s ]
+
+[ 2015-07-17T15:51:14+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:51:24+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/2?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 2  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:54:25+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:57:18+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:57:44+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:57:58+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:58:39+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:58:56+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T15:59:13+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:02:04+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:02:11+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/2?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 2  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:05:01+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/2?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 2  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:05:42+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE key = 'news' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page (status,name,key,sort,attrs,utime,atime) VALUES ('1','新闻中心','news','0','','1437120342','1437120342') [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='30' WHERE id = 3 [ RunTime:0.0120s ]
+
+[ 2015-07-17T16:05:43+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:06:09+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: key D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 38 行.
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page (status,name,parent_id,key,sort,attrs,utime,atime) VALUES ('1','公司新闻','3','','0','','1437120369','1437120369') [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='40' WHERE id = 4 [ RunTime:0.0160s ]
+
+[ 2015-07-17T16:06:10+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:09:04+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:09:07+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/4?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 4  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:09:11+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page WHERE id = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='4',status='1',sort='40',key='',name='公司新闻',parent_id='3',model_id='0',attrs='',remark='',utime='1437120551',atime='1437120369' WHERE id = 4 [ RunTime:0.0140s ]
+NOTIC: [2] Missing argument 1 for SqliteTest\Controller\PageController::tree(), called in D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php on line 101 and defined D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: pid D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 121 行.
+
+[ 2015-07-17T16:09:12+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0010s ]
+
+[ 2015-07-17T16:11:19+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/4?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 4  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:11:27+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='4',status='1',sort='40',key='',name='公司新闻',parent_id='3',model_id='0',attrs='',remark='',utime='1437120687',atime='1437120369' WHERE id = 4 [ RunTime:0.0150s ]
+SQL: SELECT id FROM an_page WHERE id = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent_id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 128 行.
+SQL: PRAGMA table_info( an_page_rel ) [ RunTime:0.0000s ]
+SQL: DELETE FROM an_page_rel WHERE page_id = 4 [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page_rel (page_id,parent_id) SELECT '4','3' [ RunTime:0.0200s ]
+
+[ 2015-07-17T16:11:28+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0010s ]
+
+[ 2015-07-17T16:12:24+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: key D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 38 行.
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: INSERT INTO an_page (status,name,parent_id,key,sort,attrs,utime,atime) VALUES ('1','行业资讯','3','','0','','1437120744','1437120744') [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='50' WHERE id = 5 [ RunTime:0.0290s ]
+SQL: SELECT id FROM an_page WHERE id = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent_id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 128 行.
+SQL: PRAGMA table_info( an_page_rel ) [ RunTime:0.0000s ]
+SQL: DELETE FROM an_page_rel WHERE page_id = 5 [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page_rel (page_id,parent_id) SELECT '5','3' [ RunTime:0.0330s ]
+
+[ 2015-07-17T16:12:25+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:12:49+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: key D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 38 行.
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: INSERT INTO an_page (status,name,parent_id,key,sort,attrs,utime,atime) VALUES ('1','科技新闻','5','','0','','1437120769','1437120769') [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='60' WHERE id = 6 [ RunTime:0.0450s ]
+SQL: SELECT id FROM an_page WHERE id = 5 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent_id D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 128 行.
+SQL: PRAGMA table_info( an_page_rel ) [ RunTime:0.0000s ]
+SQL: DELETE FROM an_page_rel WHERE page_id = 6 [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page_rel (page_id,parent_id) SELECT '6','5' [ RunTime:0.0440s ]
+
+[ 2015-07-17T16:12:50+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:15:54+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:15:56+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query/id/6?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 6  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:15:58+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page WHERE id = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE an_page SET id='6',status='1',sort='60',key='',name='科技新闻',parent_id='5',model_id='0',attrs='',remark='',utime='1437120958',atime='1437120769' WHERE id = 6 [ RunTime:0.0140s ]
+SQL: SELECT id,parent_id FROM an_page WHERE id = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT id,parent_id FROM an_page WHERE id = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( an_page_rel ) [ RunTime:0.0000s ]
+SQL: DELETE FROM an_page_rel WHERE page_id = 6 [ RunTime:0.0150s ]
+SQL: INSERT INTO an_page_rel (page_id,parent_id) SELECT '6','5' UNION ALL SELECT '6','3' [ RunTime:0.0270s ]
+
+[ 2015-07-17T16:16:00+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0010s ]
+
+[ 2015-07-17T16:16:42+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/save?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: key D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Controller\PageController.class.php 第 38 行.
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page (status,name,parent_id,key,sort,attrs,utime,atime) VALUES ('1','互联网新闻','6','','0','','1437121002','1437121002') [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: sort D:\Work-YaoLingBa\wwwroot\ThinkAPP\Apps\SqliteTest\Model\CommonModel.class.php 第 35 行.
+SQL: UPDATE an_page SET sort='70' WHERE id = 7 [ RunTime:0.0150s ]
+SQL: SELECT id,parent_id FROM an_page WHERE id = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT id,parent_id FROM an_page WHERE id = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT id,parent_id FROM an_page WHERE id = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: PRAGMA table_info( an_page_rel ) [ RunTime:0.0000s ]
+SQL: DELETE FROM an_page_rel WHERE page_id = 7 [ RunTime:0.0000s ]
+SQL: INSERT INTO an_page_rel (page_id,parent_id) SELECT '7','6' UNION ALL SELECT '7','5' UNION ALL SELECT '7','3' [ RunTime:0.0160s ]
+
+[ 2015-07-17T16:16:43+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+
+[ 2015-07-17T16:29:54+08:00 ] 127.0.0.1 /ThinkAPP/index.php/SqliteTest/Page/query?ajax=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( an_page ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM an_page  [ RunTime:0.0000s ]
+

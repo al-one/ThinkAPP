@@ -156,6 +156,10 @@ function()
     }
     $scope.add = function()
     {
+      $scope.data = App.data.form_add ||
+      {
+        item:{status:1}
+      };
       $scope.edit(false);
     }
     $scope.edit = function(url)
