@@ -1,0 +1,25 @@
+#.gitignore
+.git/
+.svn/
+.idea/
+_notes/
+.DS_Store
+
+# ThinkPHP
+Runtime/Cache/*/
+Runtime/Logs/*/
+Runtime/Temp/*/
+Runtime/Data/_fields/*
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+#dist
+#build
