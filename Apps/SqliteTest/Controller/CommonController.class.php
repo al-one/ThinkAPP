@@ -10,7 +10,12 @@ class CommonController extends Controller
   public function display($templateFile='',$charset='',$contentType='',$content='',$prefix='')
   {
     $ret = is_array($this->ret) ? $this->ret : array('ret' => 0,'msg' => '');
-    $arr = array('ret' => $ret['ret'],'msg' => $ret['msg'],'data' => $this->data);
+    $arr = array(
+      'ret'   => $ret['ret'],
+      'msg'   => $ret['msg'],
+      'data'  => $this->data,
+      'trace' => trace(),
+    );
     if(IS_AJAX) $this->ajaxReturn($arr,'JSON');
     else $this->view->display($templateFile,$charset,$contentType,$content,$prefix);
   }

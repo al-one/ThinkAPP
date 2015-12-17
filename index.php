@@ -18,4 +18,4 @@ define('APP_PATH','./Apps/');
 define('RUNTIME_PATH','./Runtime/');
 
 // 引入ThinkPHP入口文件
-require '../ThinkPHP/3.2.3/ThinkPHP.php';
+require '../ThinkPHP/3.2.3-alone/ThinkPHP.php';

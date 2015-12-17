@@ -6,14 +6,14 @@ class FieldModel extends CommonModel
 
   protected $_validate = array(
     array('name','require','名称不能为空'),
-    array('key','','key已存在',2,'unique',1),
+    array('key','','key已存在',self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
   );
 
   protected $_auto = array(
     array('status',1),
-    array('sort','auto_sort',3,'callback'),
-    array('name','trim',3,'function'),
-    array('attrs','auto_attrs',3,'callback'),
+    array('sort','auto_sort',self::MODEL_BOTH,'callback'),
+    array('name','trim',self::MODEL_BOTH,'function'),
+    array('attrs','auto_attrs',self::MODEL_BOTH,'callback'),
   );
 
   public $field_types = array(
