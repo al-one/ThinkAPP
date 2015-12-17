@@ -171,11 +171,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">显示长度 Size</label>
           <div class="col-sm-10">
-<<<<<<< HEAD
-            <input type="text" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control">
-=======
             <input type="number" name="attrs[size]" value="" ng-model="item.attrs.size" placeholder="选填" class="form-control" str-int>
->>>>>>> 068237241e9cfa3c83ebf3dadee840598a514461
           </div>
         </div>
         <div class="form-group">
