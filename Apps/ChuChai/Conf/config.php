@@ -18,7 +18,7 @@ return [
     '__PUBLIC__' => '/ThinkAPP/Apps/ChuChai/View/Default/static',
   ],
 
-  'SHOW_PAGE_TRACE' => false,
+  'SHOW_PAGE_TRACE' => defined('APP_DEBUG') && APP_DEBUG,
   'LOAD_EXT_CONFIG' => 'database',
 
 ];
